@@ -5,16 +5,43 @@
 
 #wraper{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
+#change{
+    width: 100%;
+    border: none;
+    background-color: aquamarine;
+    height: 5vh;
+    padding: 0.5vw;
+    color: rebeccapurple;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+}
+#change:focus{
+    outline: none;
+    background-color: cadetblue;
+}
+
 .element{
-    flex: 1 2vw;
+    flex: 1 1vw;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    margin: 0.2vw;
+    background-color: aliceblue;
+    padding: 0.5vw;
 }
 .element:nth-of-type(3){
-    flex: 2 2vw;
+    flex: 2 1vw;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+    background-color: rebeccapurple;
+    border: none;
 }
