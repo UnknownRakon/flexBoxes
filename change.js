@@ -1,10 +1,14 @@
-var button = document.getElementById('change')
+const button = document.getElementById('change');
+const wrapper = document.getElementById('wraper');
 
-button.onclick = function(){
-    console.log('yes')
-    if (document.getElementById('wraper').style.flexDirection == 'row'){
-        document.getElementById('wraper').style.flexDirection = 'column'
-    }else{
-        document.getElementById('wraper').style.flexDirection = 'row'   
-    }
-  }
+wrapper.style.flexDirection = 'row';
+
+const change = () => {
+if (wrapper.style.flexDirection === 'row'){
+wrapper.style.flexDirection = 'column'
+}else{
+wrapper.style.flexDirection = 'row'
+}
+};
+
+button.addEventListener(`click`, change);
