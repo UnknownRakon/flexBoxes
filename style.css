@@ -171,3 +171,18 @@ hr{
     background: linear-gradient(90deg, rgba(43,120,196,1) 27%, rgba(243,0,255,1) 100%);
     border: none;
 }
+.order{
+  order: -1;
+}
+.alignSelf{
+  align-self: center;
+}
+.self{
+  font-family: 'Akaya Telivigala', cursive;
+  color: white;
+  text-shadow: -5px 2px 0px #e600db,
+                   -10px 4px 0px #cc0188,
+                   -15px 8px 0px #bd003f;    
+  font-size: 5vh;
+  margin: 30px auto;
+}
