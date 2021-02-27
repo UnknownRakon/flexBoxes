@@ -1,14 +1,19 @@
 const button = document.getElementById('change');
-const wrapper = document.getElementById('wraper');
+const box = document.getElementsByClassName('wraper');
 
-wrapper.style.flexDirection = 'row';
+box.style.flexDirection = 'row';
 
 const change = () => {
-if (wrapper.style.flexDirection === 'row'){
-wrapper.style.flexDirection = 'column'
-}else{
-wrapper.style.flexDirection = 'row'
+if (box.style.flexDirection === 'row'){
+box.style.flexDirection = 'column'
+}else if (box.style.flexDirection === 'column'){
+box.style.flexDirection = 'column-reverse'
+}else if (box.style.flexDirection === 'column-reverse'){
+    box.style.flexDirection = 'row-reverse'
+}else if (box.style.flexDirection === 'row-reverse'){
+    box.style.flexDirection = 'row'
 }
+
 };
 
 button.addEventListener(`click`, change);
