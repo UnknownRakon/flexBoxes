@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 *{
     margin: 0;
@@ -97,6 +98,45 @@ header nav ul li a:hover::before {
   }
 main{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+main section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #direction{
+  flex-direction: row;
+  align-items: center
+;}
+main section .element{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .element img{
+  width: 20vw;
+  height: auto;
+}
+main section .element h1{
+  font-family: 'Akaya Telivigala', cursive;
+  color: rgb(63, 0, 0);
+  text-shadow: -5px 2px 0px #e62300,
+                   -10px 4px 0px #cc6301,
+                   -15px 8px 0px #bd9a00;    
+  font-size: 5vh;
+  margin-bottom: 20px;
+}
+main section .element p{
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 100;
 }
 @media (max-width: 800px) { 
     header nav ul {
@@ -107,22 +147,22 @@ main{
    }
 
 #change{
-    width: 100%;
     border: none;
-    background-color: aquamarine;
-    height: 5vh;
+    height: auto;
+    width: 200px;
+    background: none;
+    margin: 10px auto;
     padding: 0.5vw;
-    color: rebeccapurple;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
-    display: block;
+    font-family: 'Akaya Telivigala', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px 2px 0px #68e600,
+                     -6px 4px 0px #649e08,
+                     -9px 8px 0px #00bd6e;    
+    font-size: 5vh;
 }
 #change:focus{
     outline: none;
-    background-color: cadetblue;
 }
-
-
 
 hr{
     width: 100%;
