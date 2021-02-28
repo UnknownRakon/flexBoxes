@@ -67,6 +67,7 @@ header nav ul li a {
     text-transform: uppercase;
     transition: 0.5s;
     overflow: hidden;
+    text-align: center;
   }
 header nav  ul li a::before {
     content: '';
